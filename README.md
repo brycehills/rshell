@@ -8,10 +8,21 @@
 6. run executables ./test or ./rshell from main directory
 ```
 
+#Rshell
+Basic implementation of a unix shell. 
+
+### Commands are of the following format:
+```
+cmd 	= executable [ argumentList ] [ connector cmd ]
+connector = || or && or ;
+```
+###example
+ > username§host: ls -a && pwd || ps
+
 # Classes
 ## Main
- dynamically grabs user input from command line
- sends to Command.h to determine validity (execute)
+ dynamically grabs user input from command line. 
+ Then, sends to Command.h to determine validity (execute)
  Parses user input by connector in main, then by space once inside the command constructor
  Once parsed by space it is prepped for execvp() syscall
  Our data member for parse is a string since will be performing operations on an input string
