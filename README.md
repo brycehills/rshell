@@ -9,13 +9,13 @@
 ```
 
 # Classes
-•## Main
+## Main
  1. dynamically grabs user input from command line
  2. sends to Command.h to determine validity (execute)
  Parses user input by connector in main, then by space once inside the command constructor
  Once parsed by space it is prepped for execvp() syscall
  Our data member for parse is a string since will be performing operations on an input string
-• ## Parse:
+ ## Parse:
  This class handles manipulation/parsing of input data
  It will format the input string as needed
  It will also format the input string into reverse polish notation using the Schunting-yard algorithm.
