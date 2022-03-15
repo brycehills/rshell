@@ -9,7 +9,7 @@
 ```
 
 #Rshell
-Basic implementation of a unix shell. 
+Basic implementation of a unix shell with connector functionality. 
 
 ### Commands are of the following format:
 ```
