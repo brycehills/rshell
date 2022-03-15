@@ -9,13 +9,13 @@
 ```
 
 # Classes
-• Main
+•## Main
 o 1. dynamically grabs user input from command line
 o 2. sends to Command.h to determine validity (execute)
 o Parses user input by connector in main, then by space once inside the command constructor
 o Once parsed by space it is prepped for execvp() syscall
 o Our data member for parse is a string since will be performing operations on an input string
-• Parse:
+• ## Parse:
 o This class handles manipulation/parsing of input data
 o It will format the input string as needed
 o It will also format the input string into reverse polish notation using the Schunting-yard algorithm.
@@ -30,14 +30,14 @@ o These will return true if valid commands
 o Since evaluate is a virtual method, we chose for all the data types for these classes to be of Base class
 type pointers.
 ▪ This allows us to have a uniform interface throughout the program.
-• I/O redirect & piping classes:
+• ## I/O redirect & piping classes:
 o These classes all also inherit from base
 o They will handle piping and I/O redirection
 o The classes include: Pipe, Output, OutputAppend, and Input
 ▪ Pipe: allows a user to input a command using piping
 ▪ Output/OutputAppend: allows a user to enter and execute commands with output redirection
 ▪ Input: allows a user to input commands that redirect input
-• Test – GoogleTests:
+• ## Test – GoogleTests:
 o Our program also contains a test_rshell.cpp file which utilizes the googletest functionalty.
 o We have written about 30 unit tests the allow us to continually test and confirm the inner workings of
 the code are running properly.
