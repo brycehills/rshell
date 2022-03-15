@@ -8,6 +8,42 @@
 6. run executables ./test or ./rshell from main directory
 ```
 
+# Classes
+• Main
+o 1. dynamically grabs user input from command line
+o 2. sends to Command.h to determine validity (execute)
+o Parses user input by connector in main, then by space once inside the command constructor
+o Once parsed by space it is prepped for execvp() syscall
+o Our data member for parse is a string since will be performing operations on an input string
+• Parse:
+o This class handles manipulation/parsing of input data
+o It will format the input string as needed
+o It will also format the input string into reverse polish notation using the Schunting-yard algorithm.
+o Once input is parsed and in RPN, it will build a queue to adhere to the proper precedence.
+• Composite Pattern Class Group (Base, Connector, AND, OR, COLON)
+o This class group all inherit from base class “Base”
+o This class defines/implements the composite pattern
+o The base class will have a definition for virtual method evaluate
+o Evaluate will be defined differently in each of the composites (OR/AND/COLON)
+o These will return true if valid commands
+▪ They will then be executed based on the left to right precedence depending on the connectors.
+o Since evaluate is a virtual method, we chose for all the data types for these classes to be of Base class
+type pointers.
+▪ This allows us to have a uniform interface throughout the program.
+• I/O redirect & piping classes:
+o These classes all also inherit from base
+o They will handle piping and I/O redirection
+o The classes include: Pipe, Output, OutputAppend, and Input
+▪ Pipe: allows a user to input a command using piping
+▪ Output/OutputAppend: allows a user to enter and execute commands with output redirection
+▪ Input: allows a user to input commands that redirect input
+• Test – GoogleTests:
+o Our program also contains a test_rshell.cpp file which utilizes the googletest functionalty.
+o We have written about 30 unit tests the allow us to continually test and confirm the inner workings of
+the code are running properly.
+o These unit tests are accesable via our “test” executable, which is separate from the main code, “rshell”
+o New tests are added each time new functionality is added
+
 # Coding Requirements
 Extend your rshell program so that it properly handles input redirection <, output redirection > and >>, and piping |. This will require using the Unix functions dup and pipe. You can find help on how to use these functions in the man pages.
 As an example, after this assignment, your program should be able to successfully handle the following command:
