@@ -19,6 +19,7 @@ connector = || or && or ;
 ###example
  > username§host: ls -a && pwd || ps
 
+###UML Diagram
 ![alt text](https://github.com/brycehills/rshell/blob/main/uml.JPG?raw=true)
 
 # Classes
