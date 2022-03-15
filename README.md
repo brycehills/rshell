@@ -19,6 +19,8 @@ connector = || or && or ;
 ###example
  > username§host: ls -a && pwd || ps
 
+![alt text](https://github.com/brycehills/rshell/uml.JPG?raw=true)
+
 # Classes
 ## Main
  dynamically grabs user input from command line. 
