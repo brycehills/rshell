@@ -8,10 +8,6 @@
 6. run executables ./test or ./rshell from main directory
 ```
 
-# Assignment 4
-## Adding Redirection to your Shell
-### Author: Mike Izbicki
-This project must be done in a group of two
 # Coding Requirements
 Extend your rshell program so that it properly handles input redirection <, output redirection > and >>, and piping |. This will require using the Unix functions dup and pipe. You can find help on how to use these functions in the man pages.
 As an example, after this assignment, your program should be able to successfully handle the following command:
