@@ -13,7 +13,7 @@ Basic implementation of a unix shell with connector functionality.
 
 ### Commands are of the following format:
 ```
-cmd 	= executable [ argumentList ] [ connector cmd ]
+cmd 	= executable [ argument ] [ connector ]
 connector = || or && or ;
 ```
 ### example
