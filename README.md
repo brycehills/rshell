@@ -8,7 +8,7 @@
 6. run executables ./test or ./rshell from main directory
 ```
 
-#Rshell
+# Rshell
 Basic implementation of a unix shell with connector functionality. 
 
 ### Commands are of the following format:
@@ -16,7 +16,7 @@ Basic implementation of a unix shell with connector functionality.
 cmd 	= executable [ argumentList ] [ connector cmd ]
 connector = || or && or ;
 ```
-###example
+### example
  > username§host: ls -a && pwd || ps
 
 ### UML Diagram
