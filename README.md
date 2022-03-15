@@ -1,6 +1,6 @@
 ### Compiling rshell on hammer:
 ```
-1. git clone https://github.com/cs100/assignment-1-abc1234.git
+1. git clone https://github.com/brycehills/rshell.git
 2. git submodule init
 3. git submodule update
 4. cmake3 .
