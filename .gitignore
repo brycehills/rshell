@@ -1,0 +1,14 @@
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+test
+lib/
+bin/*
+test
+rshell
+appendedfile.txt
+test.txt
+pipetest.txt
+outputpipe.txt
+lstest.txt
