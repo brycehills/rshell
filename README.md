@@ -19,7 +19,7 @@ connector = || or && or ;
 ###example
  > username§host: ls -a && pwd || ps
 
-![alt text](https://github.com/brycehills/rshell/uml.JPG?raw=true)
+![alt text](https://github.com/brycehills/rshell/blob/main/uml.JPG?raw=true)
 
 # Classes
 ## Main
